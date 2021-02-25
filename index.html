@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Graph Drawer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background: linear-gradient(to top, rgba(169, 207, 19, 0.2) 0%, rgba(39, 210, 36, 0.2) 100%);
+        }
+
+        canvas {
+            background-color: white;
+        }
+
+        .btn:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    </style>
+
+</head>
+
+<body class="container vh-100 w-100 mw-100 p-0">
+    <div class="row w-100 h-100 m-auto">
+        <div class="col-sm">
+
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-primary active" for="dessinerNoeud">
+                    <input type="radio" name="options" id="dessinerNoeud" autocomplete="off" checked> Dessiner Noeud
+                </label>
+                <label class="btn btn-primary" for="dessinerArrete">
+                    <input type="radio" name="options" id="dessinerArrete" autocomplete="off"> Dessiner Arrete
+                </label>
+            </div>
+            <button type="button" class="btn btn-outline-primary" id="extraireMatrice">Extraire la matrice
+                d'adjacence</button>
+
+            <canvas width="700" height="700"></canvas>
+        </div>
+        <div class="col-sm d-flex justify-content-center align-content-center flex-wrap">
+            <canvas width="960" height="500"></canvas>
+            <div class="form-group w-100">
+                <textarea class="form-control" id="texte" rows="10"></textarea>
+            </div>
+            <button class="btn btn-primary" id="parcourir">Parcourir en profondeur</button>
+            <input type="number" id="sommetDepart" placeholder="N° du sommet de départ">
+        </div>
+
+        <script type="module" src="index.js"></script>
+    </div>
+
+</body>
+
+</html>
