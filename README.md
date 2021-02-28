@@ -12,7 +12,7 @@ Je me suis inspiré de mon projet parcours en profondeur. J'ai donc ajouté la p
 ## Réalisation :
 
 Dans ce repository vous retrouverez le code de l'application.<br />
-Bien évidement celle-ci est réalisé en Programmation Orientée Objet donc en utilisant les Javascript Class.
+Bien évidement celle-ci est réalisée en Programmation Orientée Objet donc en utilisant les Javascript Class.
 <p align="center"><img src="media/app.png" alt="drawing" width="100%"/></p>
 
 
